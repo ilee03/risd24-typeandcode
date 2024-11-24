@@ -1,0 +1,57 @@
+/* Reset the default margin and disable body scroll */
+body, html {
+    margin: 0;
+    overflow: hidden; /* Disable default scrolling */
+  }
+  
+  /* Wrapper to contain both horizontal and vertical sections */
+  .wrapper {
+    height: 100vh; /* Match viewport height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Horizontal scrolling section */
+  .horizontal-scroll {
+    display: flex;
+    flex-direction: row;
+    width: 500%; /* Adjust based on the number of horizontal sections */
+    height: 100vh;
+    transition: transform 0.6s ease-in-out; /* Smooth horizontal scrolling */
+  }
+  
+  /* Individual horizontal sections */
+  .horizontal-section {
+    width: 100vw;
+    height: 100vh;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  /* Background colors for horizontal sections */
+  .horizontal-section:nth-child(1) { background: lightcoral; }
+  .horizontal-section:nth-child(2) { background: lightblue; }
+  .horizontal-section:nth-child(3) { background: lightgreen; }
+  .horizontal-section:nth-child(4) { background: lightpink; }
+  .horizontal-section:nth-child(5) { background: lightgray; }
+  
+  /* Vertical scrolling section (if needed later) */
+  .vertical-scroll {
+    height: auto;
+    overflow-y: scroll;
+  }
+  
+  /* Individual vertical sections */
+  .vertical-section {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Background colors for vertical sections */
+  .vertical-section:nth-child(1) { background: darkseagreen; }
+  .vertical-section:nth-child(2) { background: darkslateblue; }
+  
